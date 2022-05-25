@@ -47,7 +47,7 @@
 #define SYNC_TIME_POS_X 38
 #define SYNC_TIME_POS_Y 36
 
-#define LFO_FREQ_MIN 0.05
+#define LFO_FREQ_MIN 0.01
 #define LFO_FREQ_MAX 100
 #define LFO_FREQ_DEFAULT 1
 #define LFO_FREQ_MID 3
@@ -58,7 +58,7 @@ public:
   ~LFOComponent();
 
   void forceValueTreeOntoComponents(ValueTree p_tree);
-  
+
 
   void paint(Graphics &) override;
   void setSync(bool p_sync){
@@ -69,7 +69,7 @@ public:
         m_sync_time.setVisible(true);
       } else {
         m_freq.setVisible(true);
-        m_sync_time.setVisible(false);        
+        m_sync_time.setVisible(false);
       }
       repaint();
     }
@@ -79,7 +79,7 @@ public:
     m_freq_overdraw = p_image;
   }
 
-  void setGUIBig();  
+  void setGUIBig();
   void setGUISmall();
 private:
 

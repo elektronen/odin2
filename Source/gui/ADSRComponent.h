@@ -29,7 +29,7 @@
 #define LOOP_POS_Y 82
 
 #define A_LOW_LIMIT 0.001
-#define A_HIGH_LIMIT 10
+#define A_HIGH_LIMIT 30
 #define A_DEFAULT 0.03
 #define A_MID_VALUE 1
 
